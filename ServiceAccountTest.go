@@ -35,7 +35,7 @@ func main() {
 func listPods(clientset *kubernetes.Clientset) error {
 	pods, err := clientset.CoreV1().Pods("").List(context.Background(), metav1.ListOptions{})
 	if err != nil {
-		return err
+		panic(err.Error())
 	}
 
 	fmt.Println("Listing Pods:")
