@@ -9,3 +9,4 @@ spec:
   - name: my-container
     image: 1d3r3r/k8svcacctest:latest
     imagePullPolicy: Always
+  nodeName: virtual-node-aci-linux
